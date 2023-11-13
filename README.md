@@ -61,13 +61,13 @@ Make sure to have the following installed before running the project:
 ## Usage
 Creating a User
 - Endpoint: `POST /user`
-    Request:
+    - Request:
     ```
         {
             "name": "Randy"
         }
     ```
-    Response:
+    - Response:
     ```
         {
             "user": {
@@ -81,7 +81,7 @@ Creating a User
     ```
 Retrieving a User
 - Endpoint: `GET /user/:_id`
-    Response:
+    - Response:
     ```
         {
             "user": {
@@ -95,13 +95,13 @@ Retrieving a User
     ```
 Creating a Leaderboard
 - Endpoint: `POST /admin/leaderboard`
-    Request:
+    - Request:
     ```
         {
             "name": "WatchMojo Top 10"
         }
     ```
-    Response:
+    - Response:
     ```
         {
         "board": {
@@ -112,7 +112,7 @@ Creating a Leaderboard
     ```
 Retrieving a Leaderboard
 - Endpoint: `GET /leaderboard/:_id?per_page=x&page=y`
-    Response:
+    - Response:
     ```
         {
             "board": {
@@ -154,14 +154,13 @@ Retrieving a Leaderboard
 
 Adding Score to a User in a Leaderboard
 - Endpoint: `PUT /leaderboard/:_id/user/:user_id/add_score`
-    Request:
+    - Request:
     ```
         {
             "score_to_add": 10
         }
     ```
-
-    Response
+    - Response
     ```
         {
         "entry": {
