@@ -60,14 +60,14 @@ Make sure to have the following installed before running the project:
 
 ## Usage
 Creating a User
-- Endpoint: POST /user
-    - Request:
+- Endpoint: `POST /user`
+    Request:
     ```
         {
             "name": "Randy"
         }
     ```
-    - Response:
+    Response:
     ```
         {
             "user": {
@@ -80,8 +80,8 @@ Creating a User
         }
     ```
 Retrieving a User
-- Endpoint: GET /user/:_id
-    - Response:
+- Endpoint: `GET /user/:_id`
+    Response:
     ```
         {
             "user": {
@@ -94,14 +94,14 @@ Retrieving a User
         }
     ```
 Creating a Leaderboard
-- Endpoint: POST /admin/leaderboard
+- Endpoint: `POST /admin/leaderboard`
+    Request:
     ```
-    - Request:
         {
             "name": "WatchMojo Top 10"
         }
     ```
-    - Response:
+    Response:
     ```
         {
         "board": {
@@ -111,8 +111,8 @@ Creating a Leaderboard
         }
     ```
 Retrieving a Leaderboard
-- Endpoint: GET /leaderboard/:_id?per_page=x&page=y
-    - Response:
+- Endpoint: `GET /leaderboard/:_id?per_page=x&page=y`
+    Response:
     ```
         {
             "board": {
@@ -153,15 +153,15 @@ Retrieving a Leaderboard
     ```
 
 Adding Score to a User in a Leaderboard
-- Endpoint: PUT /leaderboard/:_id/user/:user_id/add_score
-    - Request:
+- Endpoint: `PUT /leaderboard/:_id/user/:user_id/add_score`
+    Request:
     ```
         {
             "score_to_add": 10
         }
     ```
 
-    -Response
+    Response
     ```
         {
         "entry": {
@@ -174,4 +174,4 @@ Adding Score to a User in a Leaderboard
         }
     ```
 
-# Use tools like Postman or cURL to make HTTP requests to these endpoints and test the functionality of the API.
+- Use tools like Postman or cURL to make HTTP requests to these endpoints and test the functionality of the API.
